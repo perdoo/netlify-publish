@@ -1,0 +1,18 @@
+name: Netlify Publish
+description: Publish Netlify deploy
+branding:
+  icon: copy
+  color: orange
+inputs:
+  netlifyToken:
+    description: Netlify personal API token
+    required: true
+  siteId:
+    description: Netlify site ID
+    required: true
+  deployId:
+    description: Netlify deploy ID to publish
+    required: true
+runs:
+  using: "node16"
+  main: "index.js"
